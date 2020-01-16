@@ -20,7 +20,8 @@
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
 
-		2) configured spring.thymeleaf.prefix properties if template files is not in default location.(classpath:/templates/)
+		2) configured spring.thymeleaf.prefix properties if template files is not in default 
+		location.(classpath:/templates/)
 		3) by-default cache is true ..for development you can set false using spring.thymeleaf.cache=false
 		4) by-default suffix is .html ..you can set as you want using ..spring.thymeleaf.suffix=.htm
 
@@ -96,13 +97,15 @@
 	---------------------------------
 	th:text vs data-th:text both will work fine for template engine.
 	but th:text is not valid for HTML5 specification it might raising complain for html5 document ...
-	adding data- as prefix like data-th:text will be valid for HTML5 specification and also work fine with Template engine.
+	adding data- as prefix like data-th:text will be valid for HTML5 specification and also 
+	work fine with Template engine.
 
 	Escaped vs unescaped text
 	----------------------------
 	1) th:text ="#{home.msg}" ---it will escaped special character outcome might be changed 
 	if 'home.msg' key having any special character like <> and all.
-	2) th:utext ="#{home.msg}"  --it will display message without escaping of any present special characters.
+	2) th:utext ="#{home.msg}"  --it will display message without escaping of any present
+	 special characters.
 	100% outcome will be same as 'home.msg' key.mainly use if message having any html tags.
 	
 	
